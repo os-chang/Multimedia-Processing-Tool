@@ -1011,7 +1011,7 @@ class DecodeApp(AviLosslessApp):
 # ----------------------------------------------------------------------------
 if __name__ == "__main__":
     root = tk.Tk()
-    root.title("AVI 批量处理工具")
+    root.title("Multimedia Processing Tool")
     root.geometry("1040x820")
     root.minsize(920, 640)
 

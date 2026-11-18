@@ -244,7 +244,7 @@ class AVIConverterMulti:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("AVI批量转MP4 (多进程·动态分配)")
+        self.root.title("Multimedia Processing Tool")
         self.root.geometry("1080x840")
         self.root.minsize(920, 620)
 

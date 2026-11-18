@@ -202,7 +202,7 @@ class FileScannerApp:
         self.root = root
         self.initial_mode = mode if mode in ("copy", "move") else "copy"
         self.current_mode = self.initial_mode
-        self.root.title("多进程文件扫描与复制工具")
+        self.root.title("Multimedia Processing Tool")
         self.root.geometry("1060x960")
         self.root.minsize(920, 720)
 
@@ -347,7 +347,7 @@ class FileScannerApp:
     def _on_mode_changed(self):
         move = self.var_mode.get() == "move"
         self.current_mode = self.var_mode.get()
-        self.root.title("多进程文件扫描与移动工具" if move else "多进程文件扫描与复制工具")
+        self.root.title("Multimedia Processing Tool")
         if hasattr(self, "btn_copy"):
             self.btn_copy.config(text="确定移动" if move else "✅ 确定复制")
 
@@ -602,7 +602,7 @@ class FileScannerApp:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="多进程文件扫描、复制与移动工具")
+    parser = argparse.ArgumentParser(description="Multimedia Processing Tool")
     parser.add_argument("--src", help="源文件夹路径")
     parser.add_argument("--dst", help="目标文件夹路径")
     parser.add_argument("--ext", help="文件后缀，如 .txt,.py")

@@ -8,7 +8,7 @@ import time
 class FileDeleterApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("文件批量删除工具 (单线程版)")
+        self.root.title("Multimedia Processing Tool")
         self.root.geometry("1040x800")
         self.root.minsize(900, 600)
 
